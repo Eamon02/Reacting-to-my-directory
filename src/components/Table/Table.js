@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Row from '../Table/Row';
-
+import Sort from '../Table/Sort';
 
 function Table(props) {
     const [employeeList, setEmployeeList] = useState([])
@@ -28,9 +28,7 @@ function Table(props) {
     return (
         <>
             <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <input class="form-control me-2" type="search" placeholder="Search by Last" aria-label="Search" onChange={filter}/>
-            </div>
+           <Sort/>
             </nav>
             <div>
                 <table class="table">
