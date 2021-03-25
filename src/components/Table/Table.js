@@ -23,18 +23,20 @@ function Table(props) {
 
         setFilteredEmployeeList(newList);
     }
+    
 
     return (
         <>
             <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={filter}/>
+                <input class="form-control me-2" type="search" placeholder="Search by Last" aria-label="Search" onChange={filter}/>
             </div>
             </nav>
             <div>
                 <table class="table">
                 <thead>
                     <tr>
+                    <th scope="col">City</th>    
                     <th scope="col">Id</th>
                     <th scope="col">First</th>
                     <th scope="col">Last</th>
